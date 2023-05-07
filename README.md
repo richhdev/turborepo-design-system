@@ -190,3 +190,13 @@ To publish packages to a private npm organization scope, **remove** the followin
 -  "access": "public"
 - },
 ```
+
+---
+
+---
+
+install pnpm with github actions:
+https://pnpm.io/continuous-integration#github-actions
+
+change workflow permissions:
+https://github.com/actions/checkout/issues/417#issuecomment-1427951779
