@@ -1,8 +1,8 @@
 ---
-"@acme/core": major
-"@acme/tsconfig": major
-"@acme/utils": major
-"eslint-config-acme": major
+"@richh-ui/core": major
+"@richh-ui/tsconfig": major
+"@richh-ui/utils": major
+"eslint-config-richh-ui": major
 ---
 
 First release

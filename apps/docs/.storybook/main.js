@@ -14,10 +14,10 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "@acme/core",
+            find: "@richh-ui/core",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/acme-core/"
+              "../../../packages/richh-ui-core/"
             ),
           },
         ],
