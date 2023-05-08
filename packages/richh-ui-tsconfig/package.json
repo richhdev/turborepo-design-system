@@ -1,6 +1,6 @@
 {
-  "name": "@richh-ui/tsconfig",
-  "version": "1.0.0",
+  "name": "@richh-ui/ts-config",
+  "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "publishConfig": {

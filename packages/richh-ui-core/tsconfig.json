@@ -1,5 +1,5 @@
 {
-  "extends": "@richh-ui/tsconfig/react-library.json",
+  "extends": "@richh-ui/ts-config/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

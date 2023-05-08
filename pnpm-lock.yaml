@@ -5,21 +5,22 @@ importers:
   .:
     specifiers:
       '@changesets/cli': ^2.25.2
+      '@richh-ui/eslint-config': workspace:0.0.0
       eslint: ^8.29.0
-      eslint-config-richh-ui: workspace:0.0.0
       prettier: ^2.8.0
       turbo: latest
     devDependencies:
       '@changesets/cli': 2.26.1
+      '@richh-ui/eslint-config': link:packages/richh-ui-eslint-config
       eslint: 8.39.0
-      eslint-config-richh-ui: link:packages/eslint-config-richh-ui
       prettier: 2.8.8
       turbo: 1.9.3
 
   apps/docs:
     specifiers:
-      '@richh-ui/core': workspace:0.0.0
-      '@richh-ui/tsconfig': workspace:0.0.0
+      '@richh-ui/core': workspace:1.0.0
+      '@richh-ui/eslint-config': workspace:0.0.0
+      '@richh-ui/ts-config': workspace:0.0.0
       '@storybook/addon-actions': ^6.5.14
       '@storybook/addon-docs': ^6.5.14
       '@storybook/addon-essentials': ^6.5.14
@@ -27,7 +28,6 @@ importers:
       '@storybook/builder-vite': ^0.1.41
       '@storybook/react': ^6.5.14
       '@vitejs/plugin-react': ^1.3.2
-      eslint-config-richh-ui: workspace:0.0.0
       react: ^18.2.0
       react-dom: ^18.2.0
       serve: ^13.0.4
@@ -38,7 +38,8 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@richh-ui/tsconfig': link:../../packages/richh-ui-tsconfig
+      '@richh-ui/eslint-config': link:../../packages/richh-ui-eslint-config
+      '@richh-ui/ts-config': link:../../packages/richh-ui-tsconfig
       '@storybook/addon-actions': 6.5.16_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-docs': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
       '@storybook/addon-essentials': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
@@ -46,12 +47,31 @@ importers:
       '@storybook/builder-vite': 0.1.41_mh4tydi665ebx2y3gjsscjxv4a
       '@storybook/react': 6.5.16_ygqkwb4gg3aean7xjfdauovyqq
       '@vitejs/plugin-react': 1.3.2
-      eslint-config-richh-ui: link:../../packages/eslint-config-richh-ui
       serve: 13.0.4
       typescript: 4.9.5
       vite: 2.9.15
 
-  packages/eslint-config-richh-ui:
+  packages/richh-ui-core:
+    specifiers:
+      '@richh-ui/eslint-config': workspace:*
+      '@richh-ui/ts-config': workspace:*
+      '@types/react': ^18.0.9
+      '@types/react-dom': ^18.0.4
+      eslint: ^8.15.0
+      react: ^18.1.0
+      tsup: ^5.10.1
+      typescript: ^4.5.3
+    devDependencies:
+      '@richh-ui/eslint-config': link:../richh-ui-eslint-config
+      '@richh-ui/ts-config': link:../richh-ui-tsconfig
+      '@types/react': 18.2.5
+      '@types/react-dom': 18.2.3
+      eslint: 8.39.0
+      react: 18.2.0
+      tsup: 5.12.9_typescript@4.9.5
+      typescript: 4.9.5
+
+  packages/richh-ui-eslint-config:
     specifiers:
       eslint-config-next: latest
       eslint-config-prettier: ^8.3.0
@@ -63,45 +83,25 @@ importers:
       eslint-config-turbo: 1.9.3
       eslint-plugin-react: 7.29.4
 
-  packages/richh-ui-core:
-    specifiers:
-      '@richh-ui/tsconfig': workspace:*
-      '@types/react': ^18.0.9
-      '@types/react-dom': ^18.0.4
-      eslint: ^8.15.0
-      eslint-config-richh-ui: workspace:*
-      react: ^18.1.0
-      tsup: ^5.10.1
-      typescript: ^4.5.3
-    devDependencies:
-      '@richh-ui/tsconfig': link:../richh-ui-tsconfig
-      '@types/react': 18.2.5
-      '@types/react-dom': 18.2.3
-      eslint: 8.39.0
-      eslint-config-richh-ui: link:../eslint-config-richh-ui
-      react: 18.2.0
-      tsup: 5.12.9_typescript@4.9.5
-      typescript: 4.9.5
-
   packages/richh-ui-tsconfig:
     specifiers: {}
 
   packages/richh-ui-utils:
     specifiers:
-      '@richh-ui/tsconfig': workspace:*
+      '@richh-ui/eslint-config': workspace:*
+      '@richh-ui/ts-config': workspace:*
       '@types/react': ^18.0.9
       '@types/react-dom': ^18.0.4
       eslint: ^8.15.0
-      eslint-config-richh-ui: workspace:*
       react: ^18.1.0
       tsup: ^5.10.1
       typescript: ^4.5.3
     devDependencies:
-      '@richh-ui/tsconfig': link:../richh-ui-tsconfig
+      '@richh-ui/eslint-config': link:../richh-ui-eslint-config
+      '@richh-ui/ts-config': link:../richh-ui-tsconfig
       '@types/react': 18.2.5
       '@types/react-dom': 18.2.3
       eslint: 8.39.0
-      eslint-config-richh-ui: link:../eslint-config-richh-ui
       react: 18.2.0
       tsup: 5.12.9_typescript@4.9.5
       typescript: 4.9.5
