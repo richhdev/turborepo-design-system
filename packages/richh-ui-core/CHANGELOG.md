@@ -1,5 +1,11 @@
 # @richh-ui/core
 
+## 1.3.0
+
+### Minor Changes
+
+- f29cb8a: trigger new version
+
 ## 1.2.0
 
 ### Minor Changes
