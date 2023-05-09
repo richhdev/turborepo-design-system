@@ -1,5 +1,11 @@
 # @richh-ui/core
 
+## 1.2.0
+
+### Minor Changes
+
+- 83eb6cd: test version bump
+
 ## 1.1.0
 
 ### Minor Changes
